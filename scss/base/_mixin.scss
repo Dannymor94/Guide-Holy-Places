@@ -1,0 +1,18 @@
+@mixin dfb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+};
+@mixin dfc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin mf {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+}

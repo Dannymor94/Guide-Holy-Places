@@ -1,0 +1,43 @@
+.nav {
+}
+.nav__logo {
+}
+.nav__leng {
+}
+.nav__login {
+}
+.nav__logo-text {
+}
+.nav__search {
+}
+.nav__input-search {
+}
+.nav__search-icon {
+}
+.header {
+  background-image: url(../../img/mobile/bg-m.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include dfc;
+  height: 100vh;
+}
+.header__wrap {
+  background-image: url(../../img/mobile/brush-m.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 180px;
+  background-size: 100%;
+  width: 100%;
+  flex-shrink: 0;
+}
+.header__title {
+  font-family: "Monly Lite", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 70px;
+  color: rgb(255, 251, 245);
+  text-align: center;
+}
+.header__arrow {
+}
