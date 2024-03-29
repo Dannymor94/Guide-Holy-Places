@@ -5,6 +5,7 @@
 }
 body {
   color: $color-dark;
+  background-color: $bg-color;
   @include mf;
   min-width: $screen-mobile;
 }
