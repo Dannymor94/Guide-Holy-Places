@@ -1,0 +1,57 @@
+.project {
+  background-color: $bgSection;
+  padding: 48px 10px 32px 10px;
+}
+.project__title {
+  @include fontTitle;
+  color: $color-accent;
+  font-size: 36px;
+  margin-bottom: 21px;
+}
+.project__wrap-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.project__text {
+}
+.project__ul {
+}
+.project__li {
+  margin-bottom: 6px;
+  margin-left: 24px;
+  position: relative;
+  &:nth-last-child(1){
+    margin-bottom: 0;
+  }
+  &::before{
+    content: url('../../img/icon/arrow-right.svg');;
+    position: absolute;
+    top: 0;
+    left: -15px;
+  }
+}
+.project__wrap-img {
+  margin: 15px 0;
+  position: relative;
+  width: 301.47px;
+  height: 317.35px;
+}
+.project__img{
+  position: absolute;
+  &:nth-child(1){
+    top: 0;
+  left: 0;
+  
+  }
+  &:nth-child(2){
+    top: 0;
+  right: 0;
+  
+  }
+  &:nth-child(3){
+    bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,34 @@
+.footer {
+  background-color: $bgSection;
+  padding: 20px 10px;
+}
+.footer__title {
+  @include fontTitle;
+  color: $color-accent;
+  font-size: 55px;
+  text-align: left;
+  line-height: 75px;
+  margin-bottom: 25px;
+}
+.footer__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+.footer__ul {
+
+}
+.footer__li--orange {
+  color: $color-accent;
+  font-size: 18px;
+}
+.footer__li {
+  @include fontText;
+}
+.footer__li--bold{
+  font-weight: 600;
+}
+.footer__copy {
+  font-size: 12px;
+}

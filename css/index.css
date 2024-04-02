@@ -179,7 +179,7 @@ body {
 }
 
 .header {
-  background-image: url(../../img/mobile/bg-m.jpg);
+  background-image: url(../../img/mobile/header/bg-m.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -197,11 +197,11 @@ body {
 
 .header__title {
   font-family: "Monly Lite", sans-serif;
-  font-size: 56px;
   font-weight: 700;
+  text-align: center;
+  font-size: 56px;
   line-height: 70px;
   color: rgb(255, 251, 245);
-  text-align: center;
   z-index: 2;
   width: 100%;
   position: absolute;
@@ -219,4 +219,116 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 1;
+}
+
+.project {
+  background-color: rgb(254, 246, 235);
+  padding: 48px 10px 32px 10px;
+}
+
+.project__title {
+  font-family: "Monly Lite", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(255, 96, 0);
+  font-size: 36px;
+  margin-bottom: 21px;
+}
+
+.project__wrap-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.project__li {
+  margin-bottom: 6px;
+  margin-left: 24px;
+  position: relative;
+}
+.project__li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.project__li::before {
+  content: url("../../img/icon/arrow-right.svg");
+  position: absolute;
+  top: 0;
+  left: -15px;
+}
+
+.project__wrap-img {
+  margin: 15px 0;
+  position: relative;
+  width: 301.47px;
+  height: 317.35px;
+}
+
+.project__img {
+  position: absolute;
+}
+.project__img:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.project__img:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+.project__img:nth-child(3) {
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.footer {
+  background-color: rgb(254, 246, 235);
+  padding: 20px 10px;
+}
+
+.footer__title {
+  font-family: "Monly Lite", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(255, 96, 0);
+  font-size: 55px;
+  text-align: left;
+  line-height: 75px;
+  margin-bottom: 25px;
+}
+
+.footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.footer__li--orange {
+  color: rgb(255, 96, 0);
+  font-size: 18px;
+}
+
+.footer__li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.footer__li--bold {
+  font-weight: 600;
+}
+
+.footer__copy {
+  font-size: 12px;
 }

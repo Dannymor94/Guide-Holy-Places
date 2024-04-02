@@ -65,7 +65,7 @@
   height: 15px;
 }
 .header {
-  background-image: url(../../img/mobile/bg-m.jpg);
+  background-image: url(../../img/mobile/header/bg-m.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -75,15 +75,13 @@
    @include  absolute-center; 
 }
 .header__title {
-  font-family: "Monly Lite", sans-serif;
+  @include fontTitle;
   font-size: 56px;
-  font-weight: 700;
   line-height: 70px;
   color: rgb(255, 251, 245);
-  text-align: center;
-  z-index: 2;
+   z-index: 2;
   @include  absolute-center; 
-  
+
 }
 .header__img{
   @include  absolute-center; 
