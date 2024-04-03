@@ -9,3 +9,11 @@ body {
   @include mf;
   min-width: $screen-mobile;
 }
+.main{
+
+  @media (min-width:$screen-tablet) {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+}

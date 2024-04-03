@@ -70,9 +70,22 @@
   background-size: cover;
   height: 100vh;
   position: relative;
+  @media (min-width:$screen-tablet) {
+    background-image: url(../../img/header/bg-t.jpg);
+  }
 }
 .header__wrap {    
-   @include  absolute-center; 
+  width: 100vw;
+  height: 100vh; 
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  @include dfc;
+  background-image: url(../../img/mobile/header/brush-m.png);
+  @media (min-width: $screen-tablet) {
+    background-image: url(../../img/header/brush-d.png);
+  }
+
 }
 .header__title {
   @include fontTitle;
@@ -80,13 +93,9 @@
   line-height: 70px;
   color: rgb(255, 251, 245);
    z-index: 2;
-  @include  absolute-center; 
-
+  @media (min-width: $screen-tablet) {
+     font-size: 85px;
+  }
 }
-.header__img{
-  @include  absolute-center; 
-  z-index: 1;
-}
-
 .header__arrow {
 }

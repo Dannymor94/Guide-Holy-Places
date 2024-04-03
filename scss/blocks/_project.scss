@@ -1,17 +1,27 @@
 .project {
+  margin: 0 auto;
   background-color: $bgSection;
   padding: 48px 10px 32px 10px;
+  @media (min-width: $screen-tablet) {
+    padding: 44px 71px;
+  }
 }
 .project__title {
   @include fontTitle;
   color: $color-accent;
   font-size: 36px;
   margin-bottom: 21px;
+   @media (min-width: $screen-tablet) {
+    font-size: 55px;
+  }
 }
 .project__wrap-text {
   display: flex;
   flex-direction: column;
   gap: 15px;
+   @media (min-width: $screen-tablet) {
+    font-size: 18px;
+  }
 }
 .project__text {
 }
@@ -31,27 +41,49 @@
     left: -15px;
   }
 }
-.project__wrap-img {
+.project__wrap-img--mobile {
   margin: 15px 0;
   position: relative;
   width: 301.47px;
   height: 317.35px;
+   @media (min-width: $screen-tablet) {
+    display: none;
+  }
+}
+.project__wrap-img--tablet{
+  display: none;
+  @media (min-width: $screen-tablet) {
+     margin: 15px 0;
+    position: relative;
+    min-width: 714px;
+    min-height: 525px;
+    display: block;
+  }
 }
 .project__img{
   position: absolute;
   &:nth-child(1){
     top: 0;
-  left: 0;
-  
+  left: 50%;
+    transform: translateX(-100%);
+    @media (min-width: $screen-tablet) {
+    
+  }
   }
   &:nth-child(2){
     top: 0;
-  right: 0;
-  
+  right: 50%;
+     transform: translateX(100%);
+  @media (min-width: $screen-tablet) {
+     
+  }
   }
   &:nth-child(3){
     bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  }
+  @media (min-width: $screen-tablet) {
+    
   }
 }

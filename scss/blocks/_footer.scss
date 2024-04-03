@@ -1,5 +1,5 @@
 .footer {
-  background-color: $bgSection;
+  
   padding: 20px 10px;
 }
 .footer__title {
@@ -9,12 +9,23 @@
   text-align: left;
   line-height: 75px;
   margin-bottom: 25px;
+  @media (min-width: $screen-tablet) {
+    text-align: center;
+  }
 }
-.footer__wrap {
+.footer__wrap{
+  max-width: $screen-tablet;
+  padding: 5px;
+}
+.footer__wrap-ul {
   display: flex;
   flex-direction: column;
   gap: 25px;
   margin-bottom: 30px;
+  @media (min-width: 720px) {
+    flex-direction:row;
+    justify-content: space-between;
+  }
 }
 .footer__ul {
 
