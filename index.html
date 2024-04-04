@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <link rel="stylesheet" type="text/css" href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps.css" />
+  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
+  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/services/services-web.min.js"></script>
+  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/DrawingTools/1.1.4/DrawingTools-web.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/DrawingTools/1.1.4/DrawingTools.css" />
+<script defer type="module" src="index.js"></script>
   <link rel="stylesheet" href="css/index.min.css">
   <title>Dhama</title>
 </head>
@@ -65,7 +73,8 @@
     </div>
     <div class="location__wrap-map">
       <div class="location__map">
-        map
+        <div id="map"></div>
+        <button id="button">Проложить маршрут</button>
       </div>
     </div>
   </section>

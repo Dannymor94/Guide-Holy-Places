@@ -6,6 +6,10 @@
     padding: 44px 71px;
   }
 }
+#map{
+  width: 100vw;
+  height: 100vh;
+}
 .project__title {
   @include fontTitle;
   color: $color-accent;
