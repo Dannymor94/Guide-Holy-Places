@@ -16,4 +16,9 @@ body {
     margin: 0 auto;
     padding: 0 24px;
   }
+  @media (min-width:$screen-desktop) {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 70px;
+  }
 }

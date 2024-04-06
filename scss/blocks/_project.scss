@@ -5,10 +5,20 @@
   @media (min-width: $screen-tablet) {
     padding: 44px 71px;
   }
+   @media (min-width: $screen-desktop) {
+    display: flex;
+    gap: 63px;
+    padding: 80px 32px 95px 32px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 #map{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+}
+.project__wrap-text--desktop{
+  
 }
 .project__title {
   @include fontTitle;
@@ -17,6 +27,10 @@
   margin-bottom: 21px;
    @media (min-width: $screen-tablet) {
     font-size: 55px;
+  }
+   @media (min-width: $screen-desktop) {
+    margin-bottom: 30px;
+    text-align: left;
   }
 }
 .project__wrap-text {
@@ -57,11 +71,15 @@
 .project__wrap-img--tablet{
   display: none;
   @media (min-width: $screen-tablet) {
-     margin: 15px 0;
+    margin: 15px 0;
     position: relative;
-    min-width: 714px;
     min-height: 525px;
     display: block;
+  }
+  @media (min-width: $screen-desktop) {
+   min-width: 570px;
+    min-height: 488px;
+    
   }
 }
 .project__img{

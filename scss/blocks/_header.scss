@@ -15,6 +15,22 @@
   gap: 5px;
   align-items: center;
   }
+  @media (min-width: $screen-desktop) {
+    .nav__search{
+    flex-shrink: 0;
+    min-width: 320px;
+  }
+  }
+}
+.nav__wrap-item--desctop{
+  @media (min-width: $screen-desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  
+    align-self: left;
+  }
 }
 .nav__logo {
   width: 36px;
@@ -26,7 +42,7 @@
   font-size: 18px;
   text-align: center;
   padding-top:6px;
-  
+  flex-grow: 0;
 }
 .nav__leng {
 }
@@ -68,10 +84,15 @@
   background-image: url(../../img/mobile/header/bg-m.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  width: 100vw;
   height: 100vh;
   position: relative;
   @media (min-width:$screen-tablet) {
     background-image: url(../../img/header/bg-t.jpg);
+  }
+  @media (min-width:$screen-desktop) {
+    background-image: url(../../img/header/bg-d.jpg);
   }
 }
 .header__wrap {    
@@ -84,6 +105,7 @@
   background-image: url(../../img/mobile/header/brush-m.png);
   @media (min-width: $screen-tablet) {
     background-image: url(../../img/header/brush-d.png);
+    background-size:  80%;
   }
 
 }
@@ -95,6 +117,10 @@
    z-index: 2;
   @media (min-width: $screen-tablet) {
      font-size: 85px;
+  }
+  @media (min-width:$screen-desktop) {
+     font-size: 95px;
+     line-height: 115px;
   }
 }
 .header__arrow {

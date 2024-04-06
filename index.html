@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
  <link rel="stylesheet" type="text/css" href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps.css" />
-  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
-  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/services/services-web.min.js"></script>
-  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/DrawingTools/1.1.4/DrawingTools-web.js"></script>
+ 
   <link rel="stylesheet" type="text/css"
     href="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/DrawingTools/1.1.4/DrawingTools.css" />
 <script defer type="module" src="index.js"></script>
@@ -19,19 +17,20 @@
        <div class="nav__logo">
         DHAMA
        </div>
-       <div class="nav__search">
-        <input type="text" class="nav__input-search" placeholder="Поиск">
-          <img src="img/icon/Magnifier_icon.png" alt="Magnifier">
-         </div>
-       <div class="nav__leng">
-        EN
-      </div>
-      
-       <div class="nav__login">
-        <img src="img/icon/profile_icon.png" alt="icon">
-        <p class="nav__logo-text">
-          Войти
-        </p>
+       <div class="nav__wrap-item--desctop">
+        <div class="nav__search">
+          <input type="text" class="nav__input-search" placeholder="Поиск">
+            <img src="img/icon/Magnifier_icon.png" alt="Magnifier">
+          </div>
+        <div class="nav__leng">
+          EN
+        </div>
+        <div class="nav__login">
+          <img src="img/icon/profile_icon.png" alt="icon">
+          <p class="nav__logo-text">
+            Войти
+          </p>
+        </div>
        </div>
          
     </nav>
@@ -80,23 +79,25 @@
   </section>
 
   <section class="project">
-    <h2 class="project__title">
-      О проекте
-    </h2>
-    <div class="project__wrap-text">
-      <p class="project__text">
-        Дорогие преданные, данный сайт вам поможет:
-      </p>
-      <ul class="project__ul">
-        <li class="project__li">найти ГЛАВНЫЕ святые места</li>
-        <li class="project__li">найти все ДОПОЛНИТЕЛЬНЫЕ святые места</li>
-        <li class="project__li">построить точный маршрут до любого места и получить все подсказки по нему </li>
-        <li class="project__li">в изучении любого святого места (на сайте вы найдете подробное, но ёмкое описание истории каждого места; божеств, святых личностей, связанных с ним; какое благословение там можно получить)</li>
-        <li class="project__li">посмотреть яркие и четкие фотографии, видео каждого места</li>
-      </ul>
-      <p class="project__text">
-        Цель сайта — вдохновить вас на парикрамы, потому что в каждом святом месте есть УДИВИТЕЛЬНАЯ СИЛА и ГОСПОДЬ!
-      </p>
+    <div class="project__wrap-text--desktop">
+      <h2 class="project__title">
+        О проекте
+      </h2>
+      <div class="project__wrap-text">
+        <p class="project__text">
+          Дорогие преданные, данный сайт вам поможет:
+        </p>
+        <ul class="project__ul">
+          <li class="project__li">найти ГЛАВНЫЕ святые места</li>
+          <li class="project__li">найти все ДОПОЛНИТЕЛЬНЫЕ святые места</li>
+          <li class="project__li">построить точный маршрут до любого места и получить все подсказки по нему </li>
+          <li class="project__li">в изучении любого святого места (на сайте вы найдете подробное, но ёмкое описание истории каждого места; божеств, святых личностей, связанных с ним; какое благословение там можно получить)</li>
+          <li class="project__li">посмотреть яркие и четкие фотографии, видео каждого места</li>
+        </ul>
+        <p class="project__text">
+          Цель сайта — вдохновить вас на парикрамы, потому что в каждом святом месте есть УДИВИТЕЛЬНАЯ СИЛА и ГОСПОДЬ!
+        </p>
+      </div>
     </div>
     <div class="project__wrap-img--mobile">
       <img class="project__img" src="img/mobile/project/1.png" alt="img">
@@ -138,5 +139,9 @@
     </div>
   </footer>
   </main>
+
+   <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
+  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/services/services-web.min.js"></script>
+  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/DrawingTools/1.1.4/DrawingTools-web.js"></script>
 </body>
 </html>
