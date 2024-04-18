@@ -4,7 +4,7 @@ import { createMarkerHtmlElement } from "./markerElement.js";
 window.coords = [];
 window.myCoords = {};
 
-const MY_API_KEY = "pGnHj1UqWxnvpEg0bj5KJ3ouUfwYwRIs";
+const MY_API_KEY = "Szg61Iux3fdYWGRlGLWEGY8boFiiS2Sg";
 
 var map = tt.map({
   key: MY_API_KEY,

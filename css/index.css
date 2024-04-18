@@ -546,3 +546,40 @@ body {
   color: white;
   border-radius: 5px;
 }
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.marker {
+  background-image: url(../../img/icon/Location_icon.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.location__map {
+  position: relative;
+}
+
+.location__map-btn {
+  width: 210px;
+  height: 42px;
+  position: absolute;
+  padding: 8px 12px 8px 12px;
+  top: 1%;
+  right: 5%;
+  background-color: rgb(255, 96, 0);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  border-radius: 5px;
+}

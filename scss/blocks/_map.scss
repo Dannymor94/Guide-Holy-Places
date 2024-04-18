@@ -1,0 +1,23 @@
+
+.marker{
+  background-image:url(../../img/icon/Location_icon.svg);
+  width: 20px;
+  height: 20px;
+  
+}
+.location__map{
+  position: relative;
+}
+.location__map-btn{
+  width: 210px;
+height: 42px;
+position: absolute;
+padding: 8px 12px 8px 12px;
+top: 1%;
+right: 5%;
+background-color: $color-accent;
+color: white;
+@include dfc;
+gap: 8px;
+border-radius: 5px;
+}
