@@ -16,11 +16,14 @@
 </head>
 <body>
   <nav class="nav">
-       <div class="nav__logo">
+       <div class="nav__logo--desctop">
         DHAMA
        </div>
-       <div class="nav__wrap-item--desctop">
-        <div class="nav__search">
+       <div class="nav__wrap-item">
+        <div class="nav__logo">
+        DHAMA
+       </div>
+        <div class="nav__search--desctop">
           <input type="text" class="nav__input-search" placeholder="Поиск">
             <img src="img/icon/Magnifier_icon.png" alt="Magnifier">
           </div>
@@ -55,24 +58,37 @@
   <section class="location">
     <nav class="location__nav">
       <div class="location__burger">
-        -
+        <div class="location__burger-el"></div>
+        <div class="location__burger-el"></div>
+        <div class="location__burger-el"></div>
       </div>
       <p class="location__text-country">
         Страны
       </p>
     </nav>
+
+      
     <div class="location__wrap-text">
       <p class="location__text">
+        <img class="location__img" src="img/icon/Location_icon.svg" alt="icon">
         — главные святые места
       </p>
       <p class="location__text">
+        <img class="location__img" src="img/icon/location_marker.svg" alt="icon"> 
         — дополнительные святые места
       </p>
       <p class="location__text-info">
-        Чтобы увидеть всю информацию о месте, кликните на метку на карте
+       <img class="location__img-info" src="img/icon/textInfo.svg" alt="icon"> 
+       Чтобы увидеть всю информацию о месте, кликните на метку на карте
       </p>
     </div>
     <div class="location__wrap-map">
+       <div class="location__wrap-menu">
+        <ul class="location__menu">
+          <li class="location__country">Индия</li>
+          <li class="location__country">Индия</li>
+        </ul>
+      </div>
       <div class="location__map">
         <div id="map" ></div>
         <button class="location__map-btn" id="button">
@@ -145,6 +161,6 @@
   </main>
 
   
- 
+
 </body>
 </html>

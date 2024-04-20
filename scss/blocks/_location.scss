@@ -1,0 +1,153 @@
+.location{
+  @media (min-width:$screen-desktop) {
+   margin-bottom: 100px;
+  }
+  
+}
+.marker{
+  background-image:url(../../img/icon/Location_icon.svg);
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.location__map{
+  position: relative;
+  width: 100%;
+}
+.location__map-btn{
+  width: 210px;
+height: 42px;
+position: absolute;
+padding: 8px 12px 8px 12px;
+top: 1%;
+right: 5%;
+background-color: $color-accent;
+color: white;
+@include dfc;
+gap: 8px;
+border-radius: 5px;
+}
+.location {
+}
+.location__nav {
+  @include dfb;
+  background-color: $color-loght;
+  height: 52px;
+  border: 1px solid $color-border;
+  padding: 15px;
+   @media (min-width:$screen-desktop) {
+   display: none;
+  }
+}
+.location__burger {
+  width: 22px;
+  height: 14px;
+  position: relative;
+}
+.location__burger-el {
+  border-top: 2px solid black;
+  position: absolute;
+  width: 100%;
+  padding: 5px 0;
+  &:nth-child(1){
+    top: 0;
+  };
+  &:nth-child(2){
+    top: 50%;
+  };
+  &:nth-child(3){
+    top: 100%
+  };
+}
+.location__text-country {
+  font-size: 26;
+  font-weight: bold;
+}
+.location__wrap-text {
+  margin-top: 22px;
+  position: relative;
+   @media (min-width:$screen-desktop) {
+    
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 28px;
+ }
+}
+.location__text {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 12px;
+  @media (min-width:$screen-tablet) {
+     margin-bottom: 22px;
+ }
+  @media (min-width:$screen-desktop) {
+    margin-bottom: 0;
+  }
+}
+.location__text-info {
+  width: 340px;
+  display: flex;
+ background-color: $bgSection;
+ border-radius: 5px;
+ align-items: flex-start;
+ gap: 10px;
+ padding: 7px 25px;
+ margin-bottom: 15px;
+  @media (min-width:$screen-tablet) {
+    position: absolute;
+    top: 0;
+    right: 0;
+ }
+  @media (min-width:$screen-desktop) {
+    border: 1px solid rgba(252, 220, 180, 0.92);
+    top: -35px;
+ }
+}
+.location__wrap-map {
+  @media (min-width:$screen-desktop) {
+    display: flex;
+    gap: 20px;
+ }
+}
+.location__wrap-menu {
+  position: relative;
+   display: none;
+    @media (min-width:$screen-desktop) {
+    display: block;
+    
+ }
+}
+.location__menu {
+ border: 1px solid $color-border;
+border-radius: 10px;
+padding: 25px;
+font-weight: bold;
+background: $color-loght;
+width: 320px;
+position: absolute;
+ top: 5px;
+ left: 0;
+ z-index: 999;
+ @media (min-width:$screen-desktop) {
+    height: 100%;
+    position: relative;
+ }
+}
+.location__country {
+  cursor: pointer;
+   font-size: 16px;
+   margin-bottom: 20px;
+   position: relative;
+   &::after{
+    content: ">";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6.72px;
+    height: 12.49px;
+    font-size: 16px;
+   }
+}

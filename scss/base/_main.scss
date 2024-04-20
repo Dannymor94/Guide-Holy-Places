@@ -10,7 +10,11 @@ body {
   min-width: $screen-mobile;
 }
 .main{
-
+@media (min-width:$screen-mobile) {
+   
+    
+    padding: 0 10px;
+  }
   @media (min-width:$screen-tablet) {
     max-width: 720px;
     margin: 0 auto;
