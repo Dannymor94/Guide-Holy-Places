@@ -1,27 +1,23 @@
-.wrap__place{
-  padding: 70px;
-  display: grid;
-  grid-template-columns: 310px 1fr ;
-  gap: 20px;
+@import './swiper';
+.place__nav {
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
-.nav__place {
+.place__nav-link {
 }
-.nav__place-link {
+.place__nav-burger{
+margin-bottom: 60px;
+position: relative;
+}
+.place__burger-wrap{
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
 
-}
-.sidebar {
-  font-weight: bold;
-  background-color: $bgSection;
-}
-.sidebar__text {
-}
-.sidebar__title {
-}
-.sidebar__list {
-}
-.header__place {
-  margin-bottom: 50px;
-}
+
+
+
 .header__place-title {
   @include fontTitle;
   color: $color-accent;
@@ -33,20 +29,20 @@
   font-size: 16px;
   color: $color-highlighter;
 }
-.content {
-}
-.content__nav {
+
+.palce__content-nav {
   margin: 35px 15px;
   padding: 5px;
   border: 1px solid $color-accent;
   border-radius: 10px;
 }
-.nav__ul {
+.palce__content-ul {
   display: flex;
   gap: 2px;
   align-items: center;
+  flex-wrap: wrap;
 }
-.nav__li {
+.palce__content-li {
   padding: 14px 20px;
   &:hover{
     cursor: pointer;
@@ -55,15 +51,4 @@
     border-radius: 5px;
   }
 }
-.content__slider {
-}
-.content__comments {
-}
-.content__comments-title {
-}
-.content__comments-counter {
-}
-.swiper {
-  width: 600px;
-  height: 300px;
-}
+

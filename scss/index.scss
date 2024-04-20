@@ -3,13 +3,12 @@
 @import './base/var';
 @import './base/mixin';
 @import './base/main';
-
+@import './base/burger';
 @import './blocks/header';
 @import './blocks/project';
 @import './blocks/footer';
-@import './blocks/place';
 @import './blocks/location';
-
+@import './blocks/place';
 .active{
   display: block;
 }

@@ -10,18 +10,20 @@ body {
   min-width: $screen-mobile;
 }
 .main{
+  margin: 0 auto;
 @media (min-width:$screen-mobile) {
-   
+   min-width: $screen-mobile;
     
     padding: 0 10px;
   }
   @media (min-width:$screen-tablet) {
-    max-width: 720px;
+
+    min-width: $screen-tablet;
     margin: 0 auto;
     padding: 0 24px;
   }
   @media (min-width:$screen-desktop) {
-    max-width: 1300px;
+    min-width: $screen-desktop;
     margin: 0 auto;
     padding: 0 70px;
   }

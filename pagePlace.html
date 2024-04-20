@@ -13,75 +13,83 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
+<script type="module" src="js/burger.js"></script>
 
   <title>namePalce</title>
 </head>
 <body>
-  <nav class="nav__place">
-    <a href="#" class="nav__place-link">Страна</a>/
-    <a href="#" class="nav__place-link">Город</a>/
-    <a href="#" class="nav__place-link">Место</a>
-  </nav>
-  <header class="wrap__place">
-    <nav class="sidebar">
-      <p class="sidebar__text sidebar__title">
-        Страны
-      </p>
-      <p class="sidebar__text sidebar__list">
-        Индия
-      </p>
-      <p class="sidebar__text sidebar__list">
-        Индия
-      </p>
+<main class="main">
+  <section class="place">
+    <nav class="place__nav">
+      <a href="#" class="place__nav-link">Страна</a>/
+      <a href="#" class="place__nav-link">Город</a>/
+      <a href="#" class="place__nav-link">Место</a>
     </nav>
-    <header class="header__place">
-      <h2 class="header__place-title">
-        Химачал-прадеш
-      </h2>
-      <a href="#" class="header__place-link">
-        Посмотреть на карте
-      </a>
-      <section class="content">
-    <nav class="content__nav">
-      <ul class="nav__ul">
-        <li class="nav__li">Фото/Видео</li>
-        <li class="nav__li">Описание</li>
-        <li class="nav__li">История</li>
-        <li class="nav__li">Как добраться</li>
-        <li class="nav__li">Божества</li>
-      </ul>
-    </nav>
-    <div class="content__slider">
-      <div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
-    </div>
-    <div class="content__comments">
-      <div class="content__comments-title">
-        Комментарии (<span class="content__comments-counter">4</span>)
+    <nav class="nav place__nav-burger">
+        <div class="burger">
+          <div class=" burger-el"></div>
+          <div class=" burger-el"></div>
+          <div class=" burger-el"></div>
+        </div>
+        <p class=" text-country">
+          Страны
+        </p>
+        <div class=" wrap-burger-menu place__burger-wrap">
+          <ul class="burger-menu place__burger-menu">
+            <li class="burger-menu__li">Индия</li>
+            <li class="burger-menu__li">Индия</li>
+          </ul>
+        </div>
+      </nav>
+      <header class="header__place">
+          <h2 class="header__place-title">
+            Химачал-прадеш
+          </h2>
+          <a href="#" class="header__place-link">
+            Посмотреть на карте
+          </a>
+        </header>
+      <nav class="palce__content-nav">
+        <ul class="palce__content-ul">
+          <li class="palce__content-li">Фото/Видео</li>
+          <li class="palce__content-li">Описание</li>
+          <li class="palce__content-li">История</li>
+          <li class="palce__content-li">Как добраться</li>
+          <li class="palce__content-li">Божества</li>
+        </ul>
+      </nav>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              ...
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="content__comments">
+        <div class="content__comments-title">
+          Комментарии (<span class="content__comments-counter">4</span>)
+        </div>
       </div>
-    </div>
   </section>
-    </header>
-  </header>
+</main>
+ 
+ 
 
+
+ 
+  
+    
+   
+    
+    
+ 
+ 
+</main>
 </body>
 
 </html>
