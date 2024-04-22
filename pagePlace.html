@@ -31,7 +31,7 @@
           <div class=" burger-el"></div>
           <div class=" burger-el"></div>
         </div>
-        <p class=" text-country">
+        <p class="text-country">
           Страны
         </p>
         <div class=" wrap-burger-menu place__burger-wrap">
@@ -58,11 +58,27 @@
           <li class="palce__content-li">Божества</li>
         </ul>
       </nav>
-        <div class="swiper">
+      <div class="place__wrap-menu">
+        <nav class="place__menu--desctop">
+          <p class="palce__text-country--desctop">
+            Страны
+          </p>
+          <ul class="place__wrap-list--desctop">
+              <li class="place__li--desctop">Индия</li>
+              <li class="place__li--desctop">Индия</li>
+          </ul>
+        </nav>
+         <div class="swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">
+                <img class="swiper__img" src="img/place/place.jpg" alt="img">
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper__img" src="img/place/place.jpg" alt="img">
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper__img" src="img/place/place.jpg" alt="img">
+              </div>
               ...
             </div>
             <div class="swiper-pagination"></div>
@@ -70,9 +86,58 @@
             <div class="swiper-button-next"></div>
           </div>
         </div>
-        <div class="content__comments">
-        <div class="content__comments-title">
-          Комментарии (<span class="content__comments-counter">4</span>)
+      </div>
+       
+
+        <div class="place__comments">
+        <div class="place__comments-title">
+          Комментарии (<span class="place__comments-counter">4</span>)
+        </div>
+        <form class="place__send-comment" id="place__form-comment" action="#" method="post" >  
+          <label class="place__area-title-comment" for="comment">Оставить комментарий</label>
+          <textarea class="place__area-comment"  name="comment" id="comment" cols="120" rows="10" placeholder="Добавить комментарий" >
+          </textarea> 
+         
+          <button class="place__btn-send-comment" type="submit"> Опубликовать</button>
+       </form>
+        <div class="place__wrap-comment">
+          <div class="place__inner-item">
+            <div class="place__comment-avatar">
+              A
+            </div>
+            <div class="place__inner-profile">
+              <div class="place__comment-name">
+                Name
+              </div>
+              <div class="place__commetn-data">
+                2024
+              </div>
+            </div>
+          </div>
+          <div class="place__comment-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odit blanditiis laborum distinctio alias! Consectetur dolor architecto commodi possimus repellendus voluptates autem, temporibus explicabo rerum quaerat? Minima, sit. Itaque, impedit.
+          </div>
+        </div>
+         <div class="place__wrap-comment">
+          <div class="place__inner-item">
+            <div class="place__comment-avatar">
+              A
+            </div>
+            <div class="place__inner-profile">
+              <div class="place__comment-name">
+                Name
+              </div>
+              <div class="place__commetn-data">
+                2024
+              </div>
+            </div>
+          </div>
+          <div class="place__comment-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odit blanditiis laborum distinctio alias! Consectetur dolor architecto commodi possimus repellendus voluptates autem, temporibus explicabo rerum quaerat? Minima, sit. Itaque, impedit.
+          </div>
+        </div>
+        <div class="place__comment-list">
+          Смотреть все
         </div>
       </div>
   </section>

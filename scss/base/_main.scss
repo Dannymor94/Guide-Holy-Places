@@ -9,6 +9,9 @@ body {
   @include mf;
   min-width: $screen-mobile;
 }
+section{
+  padding: 0 5px;
+}
 .main{
   margin: 0 auto;
 @media (min-width:$screen-mobile) {
