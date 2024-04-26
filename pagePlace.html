@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="module"  src="./js/swiper.js" ></script>
-  <link rel="stylesheet" href="css/index.min.css">
+ 
 
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
-
+<link rel="stylesheet" href="css/index.min.css">
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script type="module" src="js/burger.js"></script>
-
+<script  type="module" src="js/tabPlace.js"></script>
+ 
   <title>namePalce</title>
 </head>
 <body>
@@ -40,7 +41,7 @@
             <li class="burger-menu__li">Индия</li>
           </ul>
         </div>
-      </nav>
+    </nav>
       <header class="header__place">
           <h2 class="header__place-title">
             Химачал-прадеш
@@ -48,14 +49,15 @@
           <a href="#" class="header__place-link">
             Посмотреть на карте
           </a>
-        </header>
-      <nav class="palce__content-nav">
-        <ul class="palce__content-ul">
-          <li class="palce__content-li">Фото/Видео</li>
-          <li class="palce__content-li">Описание</li>
-          <li class="palce__content-li">История</li>
-          <li class="palce__content-li">Как добраться</li>
-          <li class="palce__content-li">Божества</li>
+      </header>
+
+      <nav class="palce__content-nav ">
+        <ul class="palce__content-ul " role="tablist"  > 
+          <li class="palce__content-li"  role="tab" aria-selected="true" id="media">Фото/Видео</li>
+          <li class="palce__content-li" role="tab" aria-selected="false" id="description" >Описание</li>
+          <li class="palce__content-li"  role="tab" aria-selected="false" id="history" >История</li>
+          <li class="palce__content-li" role="tab" aria-selected="false" id="howGet" >Как добраться</li>
+          <li class="palce__content-li" role="tab" aria-selected="false" id="deities"   >Божества</li>
         </ul>
       </nav>
       <div class="place__wrap-menu">
@@ -68,7 +70,8 @@
               <li class="place__li--desctop">Индия</li>
           </ul>
         </nav>
-         <div class="swiper">
+       <div class="place__description" role="tabpanel" aria-labelledby="media" >
+         <div class="swiper"  >
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img class="swiper__img" src="img/place/place.jpg" alt="img">
@@ -85,6 +88,32 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
+
+       </div>
+        
+        <div class="place__description" role="tabpanel" aria-labelledby="description" >
+          <h2 class="place__tabTitle">Описание</h2>
+          <p class="place__tabText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi suscipit nihil. Impedit aliquam eos est? Voluptate iusto sit soluta itaque eveniet quis accusamus, architecto, inventore, placeat dolor explicabo pariatur.
+          </p>
+        </div>
+        <div class="place__description" role="tabpanel" aria-labelledby="history" hidden>
+          <h2 class="place__tabTitle">История</h2>
+           <p class="place__tabText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi suscipit nihil. Impedit aliquam eos est? Voluptate iusto sit soluta itaque eveniet quis accusamus, architecto, inventore, placeat dolor explicabo pariatur.
+          </p>
+        </div>
+        <div class="place__description" role="tabpanel" aria-labelledby="howGet" hidden>
+          <h2 class="place__tabTitle">Как добраться</h2>
+           <p class="place__tabText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi suscipit nihil. Impedit aliquam eos est? Voluptate iusto sit soluta itaque eveniet quis accusamus, architecto, inventore, placeat dolor explicabo pariatur.
+          </p>
+        </div>
+         <div class="place__description" role="tabpanel" aria-labelledby="deities" hidden>
+          <h2 class="place__tabTitle">Божества</h2>
+           <p class="place__tabText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi suscipit nihil. Impedit aliquam eos est? Voluptate iusto sit soluta itaque eveniet quis accusamus, architecto, inventore, placeat dolor explicabo pariatur.
+          </p>
         </div>
       </div>
        
@@ -142,18 +171,6 @@
       </div>
   </section>
 </main>
- 
- 
-
-
- 
-  
-    
-   
-    
-    
- 
- 
 </main>
 </body>
 

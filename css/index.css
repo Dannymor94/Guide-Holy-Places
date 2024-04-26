@@ -1053,6 +1053,12 @@ body.open .burger-el:nth-child(3) {
   }
 }
 
+.place__description {
+  min-width: 100%;
+  min-height: 50%;
+  background-color: rgb(254, 246, 235);
+}
+
 .active {
   display: block;
 }
