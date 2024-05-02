@@ -83,3 +83,4 @@ button.addEventListener("click", () => {
     });
 });
 };
+initMap();

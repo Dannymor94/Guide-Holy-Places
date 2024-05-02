@@ -725,11 +725,6 @@ body.open .burger-el:nth-child(3) {
   border: 1px solid rgba(252, 220, 180, 0.92);
   padding: 15px;
 }
-@media (min-width: 1140px) {
-  .nav {
-    display: none;
-  }
-}
 
 .text-country {
   font-size: 26;
@@ -810,6 +805,12 @@ body.open .burger-el:nth-child(3) {
     display: -ms-flexbox;
     display: flex;
     gap: 20px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .location__nav {
+    display: none;
   }
 }
 

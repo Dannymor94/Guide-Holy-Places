@@ -36,9 +36,7 @@ border-radius: 5px;
   height: 52px;
   border: 1px solid $color-border;
   padding: 15px;
-   @media (min-width:$screen-desktop) {
-   display: none;
-  }
+  
 }
 
 
@@ -93,5 +91,12 @@ border-radius: 5px;
   @media (min-width:$screen-desktop) {
     display: flex;
     gap: 20px;
+ }
+}
+
+.location__nav{
+
+  @media (min-width:$screen-desktop) {
+    display: none;
  }
 }
