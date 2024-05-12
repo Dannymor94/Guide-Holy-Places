@@ -30,11 +30,11 @@ geolocationControl.on("geolocate", (event) => {
 });
 
 map.addControl(geolocationControl);
-
-map.once("click", (event) => {
-  window.coords.push({ ...event.lngLat });
-  marker(map, event, createMarkerHtmlElement());
-});
+// Добавление маркера при клике
+// map.once("click", (event) => {
+//   window.coords.push({ ...event.lngLat });
+//   marker(map, event, createMarkerHtmlElement());
+// });
 
 const ttDrawingTools = new tt.plugins.DrawingTools({
   ttMapsSdk: tt,
@@ -82,5 +82,40 @@ button.addEventListener("click", () => {
       return res.toGeoJson();
     });
 });
+map.on('load',()=>{
+  const icon = document.createElement('div');
+ icon.className="marker-icon";
+
+    const markers = new tt.Marker({
+      
+     element : icon
+    })
+    .setLngLat([39.745394, 47.231086]) // Долгота и широта маркера
+    .addTo(map);
+     
+    markers.getElement().addEventListener('click', function() {
+      // Ваш код обработчика события клика
+      const popUp = document.querySelector('.location__popUp');
+      
+      popUp.classList.toggle('active')
+      const popUpBtn = document.querySelectorAll('.location__popUp-btn');
+      popUpBtn.forEach(btn =>{
+        btn.addEventListener('click',()=>{
+          popUp.classList.remove('active');
+        })
+      })
+      
+      
+     
+  
+  });
+  
+ 
+  })
+
+
+
+
+
 };
 initMap();

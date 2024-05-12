@@ -12,98 +12,14 @@
   <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/DrawingTools/1.1.4/DrawingTools-web.js"></script>
  <script  type="module" src="js/map.js"></script>
   <script  type="module" src="js/burger.js"></script>
- 
+  <script type="module" src="js/dialog.js"></script>
   <link rel="stylesheet" href="css/index.min.css">
   <title>Dhama</title>
 </head>
 <body>
-  <nav class="nav">
-       <div class="nav__logo--desctop">
-        DHAMA
-       </div>
-       <div class="nav__wrap-item">
-        <div class="nav__logo">
-        DHAMA
-       </div>
-        <div class="nav__search--desctop">
-          <input type="text" class="nav__input-search" placeholder="Поиск">
-            <img src="img/icon/Magnifier_icon.png" alt="Magnifier">
-          </div>
-        <div class="nav__leng">
-          EN
-        </div>
-        <div class="nav__login">
-          <img src="img/icon/profile_icon.png" alt="icon">
-          <p class="nav__logo-text">
-            Войти
-          </p>
-        </div>
-       </div>
-         
-    </nav>
-   <nav class="nav__search">
-        <input type="text" class="nav__input-search" placeholder="Поиск">
-          <img src="img/icon/Magnifier_icon.png" alt="Magnifier">
-    </nav>
-  <header class="header">
-     <img class="header__bg-m header__bg" src="/img/mobile/header/bg-m.jpg" alt="img">
-     <img class="header__bg-t header__bg" src="/img/header/bg-t.jpg" alt="img">
-     <img class="header__bg-d header__bg" src="/img/header/bg-d.jpg" alt="img">
-    <div class="header__wrap">
-     <img class="header__img-m header__img" src="/img/mobile/header/brush-m.png" alt="img">
-      <img class="header__img-t header__img" src="/img/header/brush-d.png" alt="img">
-        <h1 class="header__title">
-          Путеводитель <br> по святым местам
-        </h1>
-        
-    </div>
-
-  </header>
- <main class="main">
-  <section class="location">
-    <nav class="location__nav">
-      <div class="location__burger burger">
-        <div class="location__burger-el burger-el"></div>
-        <div class="location__burger-el burger-el"></div>
-        <div class="location__burger-el burger-el"></div>
-      </div>
-     
-    </nav>
-
-      
-    <div class="location__wrap-text">
-      <p class="location__text">
-        <img class="location__img" src="img/icon/Location_icon.svg" alt="icon">
-        — главные святые места
-      </p>
-      <p class="location__text">
-        <img class="location__img" src="img/icon/location_marker.svg" alt="icon"> 
-        — дополнительные святые места
-      </p>
-      <p class="location__text-info">
-       <img class="location__img-info" src="img/icon/textInfo.svg" alt="icon"> 
-       Чтобы увидеть всю информацию о месте, кликните на метку на карте
-      </p>
-    </div>
-    <div class="location__wrap-map">
-       <div class="location__wrap-menu wrap-burger-menu">
-         <p class="location__text-country text-country">
-        Страны
-      </p>
-        <ul class="burger-menu">
-          <li class="burger-menu__li">Индия</li>
-          <li class="burger-menu__li">Индия</li>
-        </ul>
-      </div>
-      <div class="location__map">
-        <div id="map" ></div>
-        <button class="location__map-btn" id="button">
-          <img src="img/icon/arrow-map.svg" alt="icon">
-          Проложить маршрут</button>
-      </div>
-    </div>
-  </section>
-  <article >
+   <button id="open">Открыть</button>
+        <dialog class="header__popUp" id="dialog">
+            
     <p class="">
      
 Путеводитель
@@ -149,7 +65,122 @@
 Харе Кришна Харе Кришна Кришна Кришна Харе Харе Харе Рама Харе Рама Рама Рама Харе Харе
 </strong>
     </p>
-  </article>
+  
+            <button id="close">Закрыть</button>
+        </dialog>
+
+  <nav class="nav">
+       <div class="nav__logo--desctop">
+        DHAMA
+       </div>
+       <div class="nav__wrap-item">
+        <div class="nav__logo">
+        DHAMA
+       </div>
+        <div class="nav__search--desctop">
+          <input type="text" class="nav__input-search" placeholder="Поиск">
+            <img src="img/icon/Magnifier_icon.png" alt="Magnifier">
+          </div>
+        <div class="nav__leng">
+          EN
+        </div>
+        <div class="nav__login">
+          <img src="img/icon/profile_icon.png" alt="icon">
+          <p class="nav__logo-text">
+            Войти
+          </p>
+        </div>
+       </div>
+         
+    </nav>
+   <nav class="nav__search">
+        <input type="text" class="nav__input-search" placeholder="Поиск">
+          <img src="img/icon/Magnifier_icon.png" alt="Magnifier">
+    </nav>
+  <header class="header">
+     <img class="header__bg-m header__bg" src="/img/mobile/header/bg-m.jpg" alt="img">
+     <img class="header__bg-t header__bg" src="/img/header/bg-t.jpg" alt="img">
+     <img class="header__bg-d header__bg" src="/img/header/bg-d.jpg" alt="img">
+    <div class="header__wrap">
+     <img class="header__img-m header__img" src="/img/mobile/header/brush-m.png" alt="img">
+      <img class="header__img-t header__img" src="/img/header/brush-d.png" alt="img">
+        <h1 class="header__title">
+          Путеводитель <br> по святым местам
+        </h1>
+        
+    </div>
+   
+  </header>
+ <main class="main">
+  <section class="location">
+    <nav class="location__nav">
+      <div class="location__burger burger">
+        <div class="location__burger-el burger-el"></div>
+        <div class="location__burger-el burger-el"></div>
+        <div class="location__burger-el burger-el"></div>
+      </div>
+     
+    </nav>
+
+      
+    <div class="location__wrap-text">
+      <p class="location__text">
+        <img class="location__img" src="img/icon/Location_icon.svg" alt="icon">
+        — главные святые места
+      </p>
+      <p class="location__text">
+        <img class="location__img" src="img/icon/location_marker.svg" alt="icon"> 
+        — дополнительные святые места
+      </p>
+      <p class="location__text-info">
+       <img class="location__img-info" src="img/icon/textInfo.svg" alt="icon"> 
+       Чтобы увидеть всю информацию о месте, кликните на метку на карте
+      </p>
+    </div>
+    <div class="location__wrap-map">
+       <div class="location__wrap-menu wrap-burger-menu">
+         <p class="location__text-country text-country">
+        Страны
+      </p>
+        <ul class="burger-menu">
+          <li class="burger-menu__li">Индия
+            <ul class="burger__dropMenu">
+              <li class="burger__li"><a href="#">Место</a></li>
+              <li class="burger__li"><a href="#">Место</a></li>
+              <li class="burger__li"><a href="#">Место</a></li>
+            </ul>
+          </li>
+            
+          <li class="burger-menu__li">Индия
+            <ul class="burger__dropMenu">
+              <li class="burger__li"><a href="#">Место</a></li>
+              <li class="burger__li"><a href="#">Место</a></li>
+              <li class="burger__li"><a href="#">Место</a></li>
+            </ul>
+          </li>
+            
+        </ul>
+      </div>
+      <div class="location__map">
+        <div class="location__popUp">
+          <p class="location__popUp-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In amet dicta voluptatem quae voluptas, debitis rem quam. Excepturi nam, architecto delectus corporis ullam vitae animi. Placeat molestiae atque non repellendus!
+          </p>
+          <div class="location__wrap-popUp-btn">
+            <button class="location__popUp-btn">
+              <a  href="#">Подробности</a>
+              </button>
+            <button class="location__popUp-btn">Закрыть</button>
+          </div>
+        </div>
+        <div id="map" ></div>
+        <button class="location__map-btn" id="button">
+          <img src="img/icon/arrow-map.svg" alt="icon">
+          Проложить маршрут</button>
+      </div>
+    </div>
+  </section>
+  
   <section class="project">
     <div class="project__wrap-text--desktop">
       <h2 class="project__title">

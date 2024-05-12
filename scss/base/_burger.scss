@@ -59,17 +59,49 @@ position: absolute;
  }
 }
 .burger-menu__li {
+  position: relative;
   cursor: pointer;
    font-size: 16px;
    margin-bottom: 20px;
    position: relative;
+   &:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+    background-color: $color-light-accent;
+    padding: 5px;
+    border-radius: 5px;
+   }
    &::after{
     content: ">";
+    transform: rotate(90deg);
     position: absolute;
     top: 0;
     right: 0;
     width: 6.72px;
     height: 12.49px;
     font-size: 16px;
+    
    }
+   .burger__dropMenu{
+    position: relative;
+    z-index: 9;
+    min-width: 150px;
+    display: none;
+    border-radius: 5px;
+   }
+   .burger__li{
+    background-color: $bg-color;
+    border: 1px solid $color-border;
+    padding: 5px;
+    font-size: 14px;
+    &:hover{
+      background-color: $color-accent;
+      color: $bg-color;
+      transition: 0.2s;
+    }
+   }
+   &:hover ul{
+    display:block
+   }
+   
 }

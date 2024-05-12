@@ -69,6 +69,7 @@ button {
   font: inherit;
   color: inherit;
   background-color: transparent;
+  cursor: pointer;
 }
 
 @font-face {
@@ -185,19 +186,53 @@ body.open .burger-el:nth-child(3) {
 }
 
 .burger-menu__li {
+  position: relative;
   cursor: pointer;
   font-size: 16px;
   margin-bottom: 20px;
   position: relative;
 }
+.burger-menu__li:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: rgb(255, 165, 89);
+  padding: 5px;
+  border-radius: 5px;
+}
 .burger-menu__li::after {
   content: ">";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   position: absolute;
   top: 0;
   right: 0;
   width: 6.72px;
   height: 12.49px;
   font-size: 16px;
+}
+.burger-menu__li .burger__dropMenu {
+  position: relative;
+  z-index: 9;
+  min-width: 150px;
+  display: none;
+  border-radius: 5px;
+}
+.burger-menu__li .burger__li {
+  background-color: rgb(255, 251, 245);
+  border: 1px solid rgba(252, 220, 180, 0.92);
+  padding: 5px;
+  font-size: 14px;
+}
+.burger-menu__li .burger__li:hover {
+  background-color: rgb(255, 96, 0);
+  color: rgb(255, 251, 245);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.burger-menu__li:hover ul {
+  display: block;
 }
 
 .nav {
@@ -812,6 +847,57 @@ body.open .burger-el:nth-child(3) {
   .location__nav {
     display: none;
   }
+}
+
+.marker-icon {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../img/icon/Location_icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.location__popUp {
+  width: 280px;
+  background-color: rgb(255, 251, 245);
+  display: block;
+  z-index: 9999;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 220, 180, 0.92);
+  display: none;
+  padding: 15px;
+}
+
+.location__popUp-text {
+  margin-bottom: 8px;
+}
+
+.location__wrap-popUp-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.location__popUp-btn {
+  width: 210px;
+  height: 42px;
+  padding: 8px 12px 8px 12px;
+  background-color: rgb(255, 96, 0);
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.location__popUp-btn:hover {
+  background-color: rgb(255, 251, 245);
+  color: rgb(255, 96, 0);
+  border: solid 1px rgb(255, 96, 0);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .swiper {
