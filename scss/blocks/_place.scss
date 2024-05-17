@@ -15,8 +15,22 @@ position: relative;
   left: 0;
 }
 
-
-
+.header__mangala{
+  @include button-accent;
+  z-index: 9999;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  font-size: 18;
+  font-weight: bold;
+  transform: translate(-50%,-50%)
+}
+.header__mangala--close{
+  @include button-accent;
+   font-size: 18;
+  font-weight: bold;
+  margin: 5px;
+}
 
 .header__place-title {
   @include fontTitle;
