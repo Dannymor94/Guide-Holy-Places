@@ -1079,67 +1079,6 @@ body.open .burger-el:nth-child(3) {
   margin-bottom: 30px;
 }
 
-@media (min-width: 1140px) {
-  .place__wrap-menu {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto;
-  }
-}
-
-.place__menu--desctop {
-  display: none;
-}
-@media (min-width: 1140px) {
-  .place__menu--desctop {
-    display: block;
-    border: 1px solid rgba(252, 220, 180, 0.92);
-    border-radius: 10px;
-    padding: 25px;
-    background: rgb(254, 246, 235);
-  }
-}
-
-.palce__text-country--desctop {
-  display: none;
-}
-@media (min-width: 1140px) {
-  .palce__text-country--desctop {
-    display: block;
-    font-size: 26px;
-    font-weight: bold;
-    margin-bottom: 25px;
-  }
-}
-
-.place__wrap-list--desctop {
-  display: none;
-}
-@media (min-width: 1140px) {
-  .place__wrap-list--desctop {
-    display: block;
-    font-weight: bold;
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 1140px) {
-  .place__li--desctop {
-    margin-bottom: 20px;
-    position: relative;
-    cursor: pointer;
-  }
-  .place__li--desctop::after {
-    content: ">";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 0;
-    right: 0;
-  }
-}
-
 .place__description {
   min-width: 100%;
   min-height: 50%;

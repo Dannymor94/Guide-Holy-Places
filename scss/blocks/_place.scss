@@ -138,60 +138,11 @@ position: relative;
   text-align: center;
   margin-bottom: 30px;
 }
-.place__wrap-menu {
-  @media (min-width:$screen-desktop) {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto;
-  }
-}
-.place__menu--desctop {
-  display: none;
-  @media (min-width:$screen-desktop) {
-    display: block;
-    
-    border: 1px solid $color-border;
-border-radius: 10px;
-padding: 25px;
-background: $bgSection;
-    
-  }
-}
-.palce__text-country--desctop {
-  display: none;
-   @media (min-width:$screen-desktop) {
-    display: block;
-    font-size: 26px;
-    font-weight: bold;
-    margin-bottom: 25px;
-  }
-}
-.place__wrap-list--desctop {
-  display: none;
-   @media (min-width:$screen-desktop) {
-    display: block;
-    font-weight: bold;
-    font-size: 16px;
-  }
-}
-.place__li--desctop {
-   @media (min-width:$screen-desktop) {
-    margin-bottom: 20px;
-    position: relative;
-    cursor: pointer;
-    &::after{
-      
-      content: ">";
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      top: 0;
-      right: 0;
-      
-    }
-  }
-}
+
+
+
+
+
 .place__description{
   min-width: 100%;
   min-height: 50%;
