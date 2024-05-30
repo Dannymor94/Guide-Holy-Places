@@ -170,6 +170,11 @@ align-items: center;
   font-size: 60px;
   color: white;
   animation: 1.3s linear 1s infinite alternate slidein;
+  &:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+    color:$color-light-accent;
+  }
 } 
 @keyframes slidein{
   0% {bottom: 20%;}

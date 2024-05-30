@@ -460,6 +460,12 @@ body.open .burger-el:nth-child(3) {
   -webkit-animation: 1.3s linear 1s infinite alternate slidein;
           animation: 1.3s linear 1s infinite alternate slidein;
 }
+.header__arrow-down:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  cursor: pointer;
+  color: rgb(255, 165, 89);
+}
 
 @-webkit-keyframes slidein {
   0% {
